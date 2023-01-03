@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.341" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <VBox prefHeight="390.0" prefWidth="241.0" spacing="10.0">
+      <HBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </HBox.margin>
+      <TextField fx:id="bandBox" promptText="Band" />
+      <TextField fx:id="freqBox" promptText="Frequency, MHz" />
+      <TextField fx:id="modeBox" promptText="Mode" />
+      <TextField fx:id="callBox" promptText="Callsign">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin></TextField>
+      <TextField fx:id="sentBox" promptText="Sent" />
+      <TextField fx:id="recBox" promptText="Received" />
+      <TextField fx:id="timeBox" promptText="Time 24h">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="dayBox" promptText="Date" />
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="184.0" spacing="10.0">
+         <Button mnemonicParsing="false" onAction="#setTime" prefWidth="80.0" text="Get Time" />
+         <Button mnemonicParsing="false" onAction="#setDate" prefWidth="80.0" text="Get Date" />
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <Button mnemonicParsing="false" onAction="#addLog" prefHeight="31.0" prefWidth="64.0" text="Enter" />
+         <Button mnemonicParsing="false" onAction="#clear" prefWidth="64.0" text="Clear" />
+         <Button mnemonicParsing="false" onAction="#newLog" prefWidth="90.0" text="New Log" />
+      </VBox>
+   </VBox>
+   <TextArea fx:id="displayArea" editable="false" prefHeight="400.0" prefWidth="413.0">
+      <HBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </HBox.margin>
+   </TextArea>
+</HBox>
