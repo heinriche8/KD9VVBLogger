@@ -1,7 +1,8 @@
 # KD9VVBLogger
 Simple logging program for amateur radio created using Java 8 and JavaFX.
 
-EDIT: I did a small rework of this program to now export logs as an ADI file, with support for appending to existing files. See https://github.com/heinriche8/KD9VVBLogger_ADI for information
+EDIT: I did a small rework of this program to now export logs as an ADI file, with support for appending to existing files. 
+See https://github.com/heinriche8/KD9VVBLogger_ADI for information
 
 This program was written by myself in an afternoon or so. I personally didn't own any "professional" logging software besides a license to excel that my university provided.
 So with that in mind, I decided to actually use what I learned in school and write a simple logging software for amateur radio!
